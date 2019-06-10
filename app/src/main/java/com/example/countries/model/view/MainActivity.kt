@@ -24,11 +24,16 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(context)
             adapter = countriesAdapter
         }
+        swipe_refresh_layout.setOnRefreshListener {
+            swipe_refresh_layout.isRefreshing = false
+            viewModel.refresh()
+        }
         observeViewModel()
     }
 
     fun observeViewModel() {
         viewModel.countries.observe(this, Observer { countries ->
+            countries_list.visibility = View.VISIBLE
             countries?.let { countriesAdapter.updateCountries(it) }
         })
         viewModel.countryLoadError.observe(this, Observer { isError ->
