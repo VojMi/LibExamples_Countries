@@ -1,7 +1,7 @@
-package com.example.countries.model.DepInject
+package com.example.countries.DepInject
 
-import com.example.countries.model.model.CountriesAPI
-import com.example.countries.model.model.CountriesService
+import com.example.countries.model.CountriesAPI
+import com.example.countries.model.CountriesService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

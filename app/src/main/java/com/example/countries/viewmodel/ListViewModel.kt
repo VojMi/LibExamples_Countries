@@ -1,10 +1,10 @@
-package com.example.countries.model.viewmodel
+package com.example.countries.viewmodel
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
-import com.example.countries.model.DepInject.DaggerAPIComponent
-import com.example.countries.model.model.CountriesService
-import com.example.countries.model.model.Country
+import com.example.countries.DepInject.DaggerAPIComponent
+import com.example.countries.model.CountriesService
+import com.example.countries.model.Country
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver

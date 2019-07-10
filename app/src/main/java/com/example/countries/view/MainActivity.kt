@@ -1,4 +1,4 @@
-package com.example.countries.model.view
+package com.example.countries.view
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.example.countries.R
-import com.example.countries.model.viewmodel.ListViewModel
+import com.example.countries.viewmodel.ListViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -1,7 +1,7 @@
-package com.example.countries.model.DepInject
+package com.example.countries.DepInject
 
-import com.example.countries.model.model.CountriesService
-import com.example.countries.model.viewmodel.ListViewModel
+import com.example.countries.model.CountriesService
+import com.example.countries.viewmodel.ListViewModel
 import dagger.Component
 
 @Component(modules = [APIModule::class])

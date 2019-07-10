@@ -1,6 +1,6 @@
-package com.example.countries.model.model
+package com.example.countries.model
 
-import com.example.countries.model.DepInject.DaggerAPIComponent
+import com.example.countries.DepInject.DaggerAPIComponent
 import io.reactivex.Single
 import javax.inject.Inject
 

@@ -1,14 +1,14 @@
-package com.example.countries.model.view
+package com.example.countries.view
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.countries.R
-import com.example.countries.model.model.Country
-import com.example.countries.model.util.loadImage
+import com.example.countries.model.Country
+import com.example.countries.util.loadImage
 import kotlinx.android.synthetic.main.item_country.view.*
-import com.example.countries.model.util.getProgressDrawable as getProgressDrawable1
+import com.example.countries.util.getProgressDrawable as getProgressDrawable1
 
 class CountryListAdapter(var countries: ArrayList<Country>) :
     RecyclerView.Adapter<CountryListAdapter.CountryViewHolder>() {
